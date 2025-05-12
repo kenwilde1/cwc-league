@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Club World Cup 2025 Predictor",
-  description: "Just for fun.",
+  description: "Just for",
 };
 
 export default function RootLayout({

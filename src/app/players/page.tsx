@@ -46,7 +46,7 @@ export default function Players() {
                 className="rounded-full mr-4"
               />
             </Link>
-            <h1 className="text-3xl font-bold">Registered Players</h1>
+            <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold">Registered Players</h1>
           </div>
           
           <Link
