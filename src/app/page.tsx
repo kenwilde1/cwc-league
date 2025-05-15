@@ -1,87 +1,117 @@
 'use client';
 
-import Image from 'next/image';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { calculatePoints } from './utils/calculate_points';
 
-export default function Home() {
-  const tournamentDate = new Date('2025-06-15T00:00:00Z');
-  const [timeLeft, setTimeLeft] = useState<{ days: number, hours: number, minutes: number, seconds: number } | null>(null);
-
-  function getTimeLeft() {
-    const now = new Date();
-    const difference = tournamentDate.getTime() - now.getTime();
-
-    if (difference <= 0) {
-      return { days: 0, hours: 0, minutes: 0, seconds: 0 };
-    }
-
-    return {
-      days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-      hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-      minutes: Math.floor((difference / (1000 * 60)) % 60),
-      seconds: Math.floor((difference / 1000) % 60),
-    };
-  }
+export default function Players() {
+  const [players, setPlayers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
+  const [results, setResults] = useState<any>([]);
 
   useEffect(() => {
-    setTimeLeft(getTimeLeft());
+    async function fetchPlayers() {
+      try {
+        const [resultsRes, playersRes] = await Promise.all([
+          fetch('/api/results'),
+          fetch('/api/players'),
+        ]);
 
-    const timer = setInterval(() => {
-      setTimeLeft(getTimeLeft());
-    }, 1000);
+        const { results } = await resultsRes.json();
+        const filteredResults = results.filter((result: any) => result.started);
+        
+        const res = await fetch('/api/players');
+        
+        if (!res.ok) {
+          throw new Error('Failed to fetch players');
+        }
+        
+        const data = await res.json();
+        setPlayers(data.users);
+        setResults(filteredResults);
+      } catch (err) {
+        console.error('Error fetching players:', err);
+        setError('Failed to load registered players. Please try again later.');
+      } finally {
+        setLoading(false);
+      }
+    }
 
-    return () => clearInterval(timer);
+    fetchPlayers();
   }, []);
 
-  // Render nothing until client-side JS is ready
-  if (timeLeft === null) {
-    return null;
-  }
-
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center px-4">
-      {/* Logo */}
-      <div className="mb-8">
-        <Image
-          src="/main.png"
-          alt="Club World Cup Predictor Logo"
-          width={160}
-          height={160}
-          className="rounded-full"
-        />
-      </div>
-
-      {/* Main Content */}
-      <div className="text-center max-w-2xl">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
-          Welcome to the Club World Cup 2025 Predictor
-        </h1>
-
-        <p className="text-gray-300 mb-8">
-          Here we go again, another predictor. Register to express interest, format and prizes to follow.
-        </p>
-
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4">
-          <a
+    <div className="min-h-screen bg-black text-white py-12 px-4">
+      <div className="max-w-4xl mx-auto">
+        {/* Header */}
+        <div className="flex flex-col md:flex-row items-center justify-between mb-12">
+          <div className="flex items-center mb-4 md:mb-0">
+            <Link href="/">
+              <Image
+                src="/main.png"
+                alt="Club World Cup Predictor Logo"
+                width={60}
+                height={60}
+                className="rounded-full mr-4"
+              />
+            </Link>
+            <h1 className="text-2xl sm:text-2xl md:text-3xl font-bold">CWC 2025 Match Predictor</h1>
+          </div>
+          <div className='flex justify-center items-center gap-2 text-sm sm:text-base'>
+          Want to get in on the action? {' '}
+          <Link
             href="/register"
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-3 px-6 rounded-full transition-colors"
+            className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-4 rounded-full transition-colors"
           >
-            Register here
-          </a>
-
-          <a
-            href="/players"
-            className="border border-yellow-500 hover:bg-yellow-500 hover:text-black text-yellow-500 font-semibold py-3 px-6 rounded-full transition-colors"
-          >
-            View registered players
-          </a>
+            Register Now
+          </Link>
+          </div>
+        </div>
+  
+        {/* Content */}
+        <div className="bg-gray-900 rounded-lg p-6">
+          {loading ? (
+            <div className="flex justify-center py-12">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-500"></div>
+            </div>
+          ) : error ? (
+            <div className="bg-red-800 text-white p-4 rounded-md">
+              {error}
+            </div>
+          ) : players.length === 0 ? (
+            <div className="text-center py-12">
+              <p className="text-xl mb-4">No registered players yet.</p>
+              <p>Be the first to join the prediction challenge!</p>
+            </div>
+          ) : (
+            <div className="space-y-3">
+              {/* Player Rows */}
+              {players
+                .map((player: any, index) => ({
+                  ...player,
+                  points: calculatePoints(player.id, results),
+                }))
+                .sort((a, b) => b.points - a.points)
+                .map((player, index, arr) => (
+                  <div
+                    key={player.id}
+                    className={`flex justify-between items-center text-lg sm:text-base px-1 py-3 ${
+                      index !== arr.length - 1 ? 'border-b border-gray-700' : ''
+                    }`}
+                  >
+                    <div className="flex items-center gap-4 w-2/3">
+                      <span className="text-yellow-500 font-mono w-6">{index + 1}</span>
+                      <span className="font-medium truncate">{player.name}</span>
+                    </div>
+                    <div className="text-right w-1/3 tabular-nums">{player.points}pts</div>
+                  </div>
+                ))}
+            </div>
+          )}
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="mt-16 text-sm text-gray-600">
-        Tournament begins in: {' '}{`${timeLeft.days}d ${timeLeft.hours}h ${timeLeft.minutes}m ${timeLeft.seconds}s`}
-      </footer>
     </div>
   );
 }

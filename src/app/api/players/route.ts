@@ -16,7 +16,8 @@ export async function GET() {
       users = Object.values(usersData).map((user: any) => ({
         id: user.id,
         name: user.name,
-        registeredAt: user.registeredAt
+        registeredAt: user.registeredAt,
+        isAdmin: user.isAdmin
       }));
     }
 
