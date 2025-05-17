@@ -1,0 +1,386 @@
+[
+  {
+    "kick_off_at": "2025-06-15T00:00:00Z",
+    "home_team": "Al Ahly",
+    "home_team_short": "AAH",
+    "away_team": "Inter Miami",
+    "away_team_short": "INT",
+    "match_id": "AAHINT"
+  },
+  {
+    "kick_off_at": "2025-06-15T16:00:00Z",
+    "home_team": "Bayern Munich",
+    "home_team_short": "BMU",
+    "away_team": "Auckland City",
+    "away_team_short": "AUC",
+    "match_id": "BMUAUC"
+  },
+  {
+    "kick_off_at": "2025-06-15T19:00:00Z",
+    "home_team": "Paris SG",
+    "home_team_short": "Paris SG",
+    "away_team": "Atletico Madrid",
+    "away_team_short": "ATM",
+    "match_id": "Paris SGATM"
+  },
+  {
+    "kick_off_at": "2025-06-15T22:00:00Z",
+    "home_team": "Palmeiras",
+    "home_team_short": "PAL",
+    "away_team": "FC Porto",
+    "away_team_short": "POR",
+    "match_id": "PALPOR"
+  },
+  {
+    "kick_off_at": "2025-06-16T02:00:00Z",
+    "home_team": "Botafogo",
+    "home_team_short": "BOT",
+    "away_team": "S. Sounders",
+    "away_team_short": "SEA",
+    "match_id": "BOTSEA"
+  },
+  {
+    "kick_off_at": "2025-06-16T19:00:00Z",
+    "home_team": "Chelsea",
+    "home_team_short": "CHE",
+    "away_team": "Club Leon",
+    "away_team_short": "LEO",
+    "match_id": "CHELEO"
+  },
+  {
+    "kick_off_at": "2025-06-16T22:00:00Z",
+    "home_team": "Boca Juniors",
+    "home_team_short": "BOC",
+    "away_team": "S.L Benfica",
+    "away_team_short": "BEN",
+    "match_id": "BOCBEN"
+  },
+  {
+    "kick_off_at": "2025-06-17T01:00:00Z",
+    "home_team": "Flamengo",
+    "home_team_short": "FLA",
+    "away_team": "ES Tunis",
+    "away_team_short": "EST",
+    "match_id": "FLAEST"
+  },
+  {
+    "kick_off_at": "2025-06-17T16:00:00Z",
+    "home_team": "Fluminense",
+    "home_team_short": "FLU",
+    "away_team": "Dortmund",
+    "away_team_short": "DOR",
+    "match_id": "FLUDOR"
+  },
+  {
+    "kick_off_at": "2025-06-17T19:00:00Z",
+    "home_team": "River Plate",
+    "home_team_short": "RIV",
+    "away_team": "Urawa Reds",
+    "away_team_short": "URA",
+    "match_id": "RIVURA"
+  },
+  {
+    "kick_off_at": "2025-06-17T22:00:00Z",
+    "home_team": "Ulsan",
+    "home_team_short": "ULS",
+    "away_team": "M. Sundowns",
+    "away_team_short": "MAS",
+    "match_id": "ULSMAS"
+  },
+  {
+    "kick_off_at": "2025-06-18T01:00:00Z",
+    "home_team": "Monterrey",
+    "home_team_short": "MON",
+    "away_team": "Inter Milan",
+    "away_team_short": "INM",
+    "match_id": "MONINM"
+  },
+  {
+    "kick_off_at": "2025-06-18T16:00:00Z",
+    "home_team": "Man City",
+    "home_team_short": "MCI",
+    "away_team": "Wydad AC",
+    "away_team_short": "WYD",
+    "match_id": "MCIWYD"
+  },
+  {
+    "kick_off_at": "2025-06-18T19:00:00Z",
+    "home_team": "Real Madrid",
+    "home_team_short": "RMA",
+    "away_team": "Al-Hilal",
+    "away_team_short": "HIL",
+    "match_id": "RMAHIL"
+  },
+  {
+    "kick_off_at": "2025-06-18T22:00:00Z",
+    "home_team": "Pachuca",
+    "home_team_short": "PAC",
+    "away_team": "RB Salzburg",
+    "away_team_short": "RBS",
+    "match_id": "PACRBS"
+  },
+  {
+    "kick_off_at": "2025-06-19T01:00:00Z",
+    "home_team": "Al Ain",
+    "home_team_short": "AIN",
+    "away_team": "Juventus",
+    "away_team_short": "JUV",
+    "match_id": "AINJUV"
+  },
+  {
+    "kick_off_at": "2025-06-19T16:00:00Z",
+    "home_team": "Palmeiras",
+    "home_team_short": "PAL",
+    "away_team": "Al Ahly",
+    "away_team_short": "AAH",
+    "match_id": "PALAAH"
+  },
+  {
+    "kick_off_at": "2025-06-19T19:00:00Z",
+    "home_team": "Inter Miami",
+    "home_team_short": "INT",
+    "away_team": "FC Porto",
+    "away_team_short": "POR",
+    "match_id": "INTPOR"
+  },
+  {
+    "kick_off_at": "2025-06-19T22:00:00Z",
+    "home_team": "S. Sounders",
+    "home_team_short": "SEA",
+    "away_team": "Atletico Madrid",
+    "away_team_short": "ATM",
+    "match_id": "SEAATM"
+  },
+  {
+    "kick_off_at": "2025-06-20T01:00:00Z",
+    "home_team": "Paris SG",
+    "home_team_short": "Paris SG",
+    "away_team": "Botafogo",
+    "away_team_short": "BOT",
+    "match_id": "Paris SGBOT"
+  },
+  {
+    "kick_off_at": "2025-06-20T16:00:00Z",
+    "home_team": "S.L Benfica",
+    "home_team_short": "BEN",
+    "away_team": "Auckland City",
+    "away_team_short": "AUC",
+    "match_id": "BENAUC"
+  },
+  {
+    "kick_off_at": "2025-06-20T18:00:00Z",
+    "home_team": "Flamengo",
+    "home_team_short": "FLA",
+    "away_team": "Chelsea",
+    "away_team_short": "CHE",
+    "match_id": "FLACHE"
+  },
+  {
+    "kick_off_at": "2025-06-20T22:00:00Z",
+    "home_team": "Club Leon",
+    "home_team_short": "LEO",
+    "away_team": "ES Tunis",
+    "away_team_short": "EST",
+    "match_id": "LEOEST"
+  },
+  {
+    "kick_off_at": "2025-06-21T01:00:00Z",
+    "home_team": "Bayern Munich",
+    "home_team_short": "BMU",
+    "away_team": "Boca Juniors",
+    "away_team_short": "BOC",
+    "match_id": "BMUBOC"
+  },
+  {
+    "kick_off_at": "2025-06-21T16:00:00Z",
+    "home_team": "M. Sundowns",
+    "home_team_short": "MAS",
+    "away_team": "Dortmund",
+    "away_team_short": "DOR",
+    "match_id": "MASDOR"
+  },
+  {
+    "kick_off_at": "2025-06-21T19:00:00Z",
+    "home_team": "Inter Milan",
+    "home_team_short": "INM",
+    "away_team": "Urawa Reds",
+    "away_team_short": "URA",
+    "match_id": "INMURA"
+  },
+  {
+    "kick_off_at": "2025-06-21T22:00:00Z",
+    "home_team": "Fluminense",
+    "home_team_short": "FLU",
+    "away_team": "Ulsan",
+    "away_team_short": "ULS",
+    "match_id": "FLUULS"
+  },
+  {
+    "kick_off_at": "2025-06-22T01:00:00Z",
+    "home_team": "River Plate",
+    "home_team_short": "RIV",
+    "away_team": "Monterrey",
+    "away_team_short": "MON",
+    "match_id": "RIVMON"
+  },
+  {
+    "kick_off_at": "2025-06-22T16:00:00Z",
+    "home_team": "Juventus",
+    "home_team_short": "JUV",
+    "away_team": "Wydad AC",
+    "away_team_short": "WYD",
+    "match_id": "JUVWYD"
+  },
+  {
+    "kick_off_at": "2025-06-22T19:00:00Z",
+    "home_team": "Real Madrid",
+    "home_team_short": "RMA",
+    "away_team": "Pachuca",
+    "away_team_short": "PAC",
+    "match_id": "RMAPAC"
+  },
+  {
+    "kick_off_at": "2025-06-22T22:00:00Z",
+    "home_team": "RB Salzburg",
+    "home_team_short": "RBS",
+    "away_team": "Al-Hilal",
+    "away_team_short": "HIL",
+    "match_id": "RBSHIL"
+  },
+  {
+    "kick_off_at": "2025-06-23T01:00:00Z",
+    "home_team": "Man City",
+    "home_team_short": "MCI",
+    "away_team": "Al Ain",
+    "away_team_short": "AIN",
+    "match_id": "MCIAIN"
+  },
+  {
+    "kick_off_at": "2025-06-23T19:00:00Z",
+    "home_team": "S. Sounders",
+    "home_team_short": "SEA",
+    "away_team": "Paris SG",
+    "away_team_short": "Paris SG",
+    "match_id": "SEAParis SG"
+  },
+  {
+    "kick_off_at": "2025-06-23T19:00:00Z",
+    "home_team": "Atletico Madrid",
+    "home_team_short": "ATM",
+    "away_team": "Botafogo",
+    "away_team_short": "BOT",
+    "match_id": "ATMBOT"
+  },
+  {
+    "kick_off_at": "2025-06-24T01:00:00Z",
+    "home_team": "FC Porto",
+    "home_team_short": "POR",
+    "away_team": "Al Ahly",
+    "away_team_short": "AAH",
+    "match_id": "PORAAH"
+  },
+  {
+    "kick_off_at": "2025-06-24T01:00:00Z",
+    "home_team": "Inter Miami",
+    "home_team_short": "INT",
+    "away_team": "Palmeiras",
+    "away_team_short": "PAL",
+    "match_id": "INTPAL"
+  },
+  {
+    "kick_off_at": "2025-06-24T19:00:00Z",
+    "home_team": "Auckland City",
+    "home_team_short": "AUC",
+    "away_team": "Boca Juniors",
+    "away_team_short": "BOC",
+    "match_id": "AUCBOC"
+  },
+  {
+    "kick_off_at": "2025-06-24T19:00:00Z",
+    "home_team": "S.L Benfica",
+    "home_team_short": "BEN",
+    "away_team": "Bayern Munich",
+    "away_team_short": "BMU",
+    "match_id": "BENBMU"
+  },
+  {
+    "kick_off_at": "2025-06-25T01:00:00Z",
+    "home_team": "ES Tunis",
+    "home_team_short": "EST",
+    "away_team": "Chelsea",
+    "away_team_short": "CHE",
+    "match_id": "ESTCHE"
+  },
+  {
+    "kick_off_at": "2025-06-25T01:00:00Z",
+    "home_team": "Club Leon",
+    "home_team_short": "LEO",
+    "away_team": "Flamengo",
+    "away_team_short": "FLA",
+    "match_id": "LEOFLA"
+  },
+  {
+    "kick_off_at": "2025-06-25T19:00:00Z",
+    "home_team": "Dortmund",
+    "home_team_short": "DOR",
+    "away_team": "Ulsan",
+    "away_team_short": "ULS",
+    "match_id": "DORULS"
+  },
+  {
+    "kick_off_at": "2025-06-25T19:00:00Z",
+    "home_team": "M. Sundowns",
+    "home_team_short": "MAS",
+    "away_team": "Fluminense",
+    "away_team_short": "FLU",
+    "match_id": "MASFLU"
+  },
+  {
+    "kick_off_at": "2025-06-26T01:00:00Z",
+    "home_team": "Urawa Reds",
+    "home_team_short": "URA",
+    "away_team": "Monterrey",
+    "away_team_short": "MON",
+    "match_id": "URAMON"
+  },
+  {
+    "kick_off_at": "2025-06-26T01:00:00Z",
+    "home_team": "Inter Milan",
+    "home_team_short": "INM",
+    "away_team": "River Plate",
+    "away_team_short": "RIV",
+    "match_id": "INMRIV"
+  },
+  {
+    "kick_off_at": "2025-06-26T19:00:00Z",
+    "home_team": "Juventus",
+    "home_team_short": "JUV",
+    "away_team": "Man City",
+    "away_team_short": "MCI",
+    "match_id": "JUVMCI"
+  },
+  {
+    "kick_off_at": "2025-06-26T19:00:00Z",
+    "home_team": "Wydad AC",
+    "home_team_short": "WYD",
+    "away_team": "Al Ain",
+    "away_team_short": "AIN",
+    "match_id": "WYDAIN"
+  },
+  {
+    "kick_off_at": "2025-06-27T01:00:00Z",
+    "home_team": "Al-Hilal",
+    "home_team_short": "HIL",
+    "away_team": "Pachuca",
+    "away_team_short": "PAC",
+    "match_id": "HILPAC"
+  },
+  {
+    "kick_off_at": "2025-06-27T01:00:00Z",
+    "home_team": "RB Salzburg",
+    "home_team_short": "RBS",
+    "away_team": "Real Madrid",
+    "away_team_short": "RMA",
+    "match_id": "RBSRMA"
+  }
+]
