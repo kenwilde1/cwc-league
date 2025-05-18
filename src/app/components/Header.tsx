@@ -14,8 +14,8 @@ export function Header() {
                         className="rounded-full mr-4"
                     />
                 <div className="flex flex-col">
-                    <h1 className="text-2xl font-semibold">CWC 2025</h1>
-                    <h1 className="text-2xl font-semibold">Match Predictor</h1>
+                    <h1 className="text-2xl text-white font-semibold">CWC 2025</h1>
+                    <h1 className="text-2xl text-white font-semibold">Match Predictor</h1>
                 </div>
                 </Link>
 

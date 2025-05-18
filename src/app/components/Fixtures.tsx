@@ -1,4 +1,7 @@
+'use client'
+
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
 import fixtures from '../data/fixtures.json';
 import logosMap from '../data/logos';
 
@@ -28,6 +31,12 @@ export function Fixtures() {
           const homeCrest = (logosMap as any)[fixture.home_team_short];
           const awayCrest = (logosMap as any)[fixture.away_team_short];
 
+          // Client-side local time state
+          const [localTime, setLocalTime] = useState<string | null>(null);
+          useEffect(() => {
+            setLocalTime(getLocalTime(fixture.kick_off_at));
+          }, [fixture.kick_off_at]);
+
           return (
             <div
               key={fixture.match_id}
@@ -46,7 +55,7 @@ export function Fixtures() {
                   />
                   )}
                 </div>
-                <span className="text-white text-lg self-center mx-1">{getLocalTime(fixture.kick_off_at)}</span>
+                <span className="text-white text-lg self-center mx-1">{localTime ?? ''}</span>
                 <div className="flex items-center gap-2">
                   {awayCrest && (
                     <Image
