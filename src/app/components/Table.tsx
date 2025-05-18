@@ -4,13 +4,11 @@ import Image from 'next/image';
 import { calculatePoints } from '../utils/calculate_points';
 import { useEffect, useState } from 'react';
 
-
 import users from '../data/users.json';
 
 export function Table() {
     const [players, setPlayers] = useState<any>([]);
     const [loading, setLoading] = useState(true);
-    const [error, setError] = useState('');
     const [results, setResults] = useState<any>([]);
     const [profilePics, setProfilePics] = useState<{ [userId: string]: string }>({});
 
@@ -25,7 +23,6 @@ export function Table() {
                 setResults(filteredResults);
             } catch (err) {
                 console.error('Error fetching players:', err);
-                setError('Failed to load registered players. Please try again later.');
             } finally {
                 setLoading(false);
             }
