@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
 import { Analytics } from '@vercel/analytics/next';
-import { Open_Sans } from 'next/font/google';
+
+import localFont from 'next/font/local';
+
 import "./globals.css";
 
-const openSans = Open_Sans({
-  subsets: ['latin'],
-  weight: ['400', '600', '700'], // add weights as needed
-  display: 'swap',
+const myFont = localFont({
+  src: '../../public/fonts/FifaSane_Regular.woff',
+  weight: '400', // optional
+  style: 'normal', // optional
 });
+
 
 export const metadata: Metadata = {
   title: "Club World Cup 2025 Predictor",
@@ -20,9 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={myFont.className}>
       <body
-        className={openSans.className}
       >
         {children}
         <Analytics />
