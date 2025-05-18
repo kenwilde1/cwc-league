@@ -20,7 +20,7 @@ export function Header() {
                 </Link>
 
             </div>
-            <div className='flex flex-col justify-center items-center gap-2 text-sm sm:text-base md:flex-row'>
+            <div className='flex flex-col texxt-white justify-center items-center gap-2 text-sm sm:text-base md:flex-row'>
                 Want to get in on the action? {' '}
                 <Link
                     href="/register"
