@@ -2,10 +2,10 @@
   {
     "kick_off_at": "2025-06-15T00:00:00Z",
     "home_team": "Al Ahly",
-    "home_team_short": "AAH",
+    "home_team_short": "AHL",
     "away_team": "Inter Miami",
-    "away_team_short": "INT",
-    "match_id": "AAHINT"
+    "away_team_short": "MIA",
+    "match_id": "AHLINT"
   },
   {
     "kick_off_at": "2025-06-15T16:00:00Z",
@@ -18,7 +18,7 @@
   {
     "kick_off_at": "2025-06-15T19:00:00Z",
     "home_team": "Paris SG",
-    "home_team_short": "Paris SG",
+    "home_team_short": "PSG",
     "away_team": "Atletico Madrid",
     "away_team_short": "ATM",
     "match_id": "Paris SGATM"
@@ -92,7 +92,7 @@
     "home_team": "Monterrey",
     "home_team_short": "MON",
     "away_team": "Inter Milan",
-    "away_team_short": "INM",
+    "away_team_short": "INT",
     "match_id": "MONINM"
   },
   {
@@ -132,13 +132,13 @@
     "home_team": "Palmeiras",
     "home_team_short": "PAL",
     "away_team": "Al Ahly",
-    "away_team_short": "AAH",
-    "match_id": "PALAAH"
+    "away_team_short": "AHL",
+    "match_id": "PALAHL"
   },
   {
     "kick_off_at": "2025-06-19T19:00:00Z",
     "home_team": "Inter Miami",
-    "home_team_short": "INT",
+    "home_team_short": "MIA",
     "away_team": "FC Porto",
     "away_team_short": "POR",
     "match_id": "INTPOR"
@@ -154,7 +154,7 @@
   {
     "kick_off_at": "2025-06-20T01:00:00Z",
     "home_team": "Paris SG",
-    "home_team_short": "Paris SG",
+    "home_team_short": "PSG",
     "away_team": "Botafogo",
     "away_team_short": "BOT",
     "match_id": "Paris SGBOT"
@@ -202,7 +202,7 @@
   {
     "kick_off_at": "2025-06-21T19:00:00Z",
     "home_team": "Inter Milan",
-    "home_team_short": "INM",
+    "home_team_short": "INT",
     "away_team": "Urawa Reds",
     "away_team_short": "URA",
     "match_id": "INMURA"
@@ -260,7 +260,7 @@
     "home_team": "S. Sounders",
     "home_team_short": "SEA",
     "away_team": "Paris SG",
-    "away_team_short": "Paris SG",
+    "away_team_short": "PSG",
     "match_id": "SEAParis SG"
   },
   {
@@ -276,13 +276,13 @@
     "home_team": "FC Porto",
     "home_team_short": "POR",
     "away_team": "Al Ahly",
-    "away_team_short": "AAH",
-    "match_id": "PORAAH"
+    "away_team_short": "AHL",
+    "match_id": "PORAHL"
   },
   {
     "kick_off_at": "2025-06-24T01:00:00Z",
     "home_team": "Inter Miami",
-    "home_team_short": "INT",
+    "home_team_short": "MIA",
     "away_team": "Palmeiras",
     "away_team_short": "PAL",
     "match_id": "INTPAL"
@@ -346,7 +346,7 @@
   {
     "kick_off_at": "2025-06-26T01:00:00Z",
     "home_team": "Inter Milan",
-    "home_team_short": "INM",
+    "home_team_short": "INT",
     "away_team": "River Plate",
     "away_team_short": "RIV",
     "match_id": "INMRIV"
