@@ -23,8 +23,6 @@ export function Table() {
                 setResults(filteredResults);
             } catch (err) {
                 console.error('Error fetching players:', err);
-            } finally {
-                setLoading(false);
             }
         }
 
@@ -55,6 +53,7 @@ export function Table() {
                 })
             );
             setProfilePics(Object.fromEntries(picEntries));
+            setLoading(false)
         }
         if (players.length > 0) {
             fetchProfilePics();
